@@ -1,1 +1,0 @@
-# ESLint-Prettier-Husky-Reactjs-boilerplate
