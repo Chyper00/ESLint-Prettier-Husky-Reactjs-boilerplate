@@ -1,25 +1,26 @@
 {
-  "name": "Minha listinha",
-  "description": "",
-  "version": "1.0",
-  "manifest_version": 3,
-  "action": {
-      "default_popup": "index.html",
-      "default_title": "Open the popup"
-  },
-  "icons": {
-      "16": "logo192.png",
-      "48": "logo192.png",
-      "128": "logo192.png"
-  },
- "permissions": [
-   "scripting",
-   "activeTab",
-   "contextMenus",
-   "storage"
-  ], 
-  "background": {
-    "service_worker": "background.js"
-  },
-  "host_permissions": ["<all_urls>"]
+	"name": "Minha listinha",
+	"description": "",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "index.html",
+		"default_title": "Open the popup"
+	},
+	"icons": {
+		"16": "logo192.png",
+		"48": "logo192.png",
+		"128": "logo192.png"
+	},
+	"permissions": [
+		"scripting",
+		"activeTab",
+		"contextMenus",
+		"storage",
+		"notifications"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"host_permissions": ["<all_urls>"]
 }

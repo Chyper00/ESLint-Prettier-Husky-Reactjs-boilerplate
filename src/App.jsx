@@ -1,7 +1,6 @@
-import './App.css';
+import History from './containers/History';
 
-function App() {
-	return <div> App </div>;
-}
+// eslint-disable-next-line react/function-component-definition
+const App = () => <History />;
 
 export default App;

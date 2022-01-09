@@ -5,5 +5,8 @@ chrome.contextMenus.create({
 });
 
 chrome.contextMenus.onClicked.addListener((clickData) => {
-	chrome.storage.sync.set({ animes: clickData.selectionText });
+	chrome.storage.sync.get('animes', ({ animes = [] }) => {
+		animes.push({ name: clickData.selectionText, page: clickData.pageUrl });
+		chrome.storage.sync.set({ animes });
+	});
 });
