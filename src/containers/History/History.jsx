@@ -21,7 +21,18 @@ const History = () => {
 				animes.map((anime) => (
 					<div>
 						<span>
-							{anime.name} - {anime.page}
+							{anime.mediaType === 'image' ? (
+								<div>
+									<img src={anime.srcUrl} width="30px" alt={anime.srcUrl} />
+									{anime.pageUrl}
+								</div>
+							) : (
+								<div>
+									<span>
+										{anime.selectionText} - {anime.pageUrl}
+									</span>
+								</div>
+							)}
 						</span>
 						<br />
 					</div>
